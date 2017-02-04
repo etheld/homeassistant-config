@@ -1,0 +1,18 @@
+platform: rpi_rf
+gpio: 17
+switches:
+  test1:
+    code_on: 5526835
+    code_off: 5526844
+  test2:
+    code_on: 5526979
+    code_off: 5526988
+  test3:
+    code_on: 5527299
+    code_off: 5527308
+  test4:
+    code_on: 5528935
+    code_off: 5526944
+  test5:
+    code_on: 5534979
+    code_off: 5534988

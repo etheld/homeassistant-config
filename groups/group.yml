@@ -1,0 +1,25 @@
+---
+  Media:
+    - "media_player.panasonic"
+    - "media_player.sony"
+
+  Sockets:
+    - switch.socket1
+    - switch.light
+    - switch.test1
+    - switch.test2
+    - switch.test3
+    - switch.test4
+    - switch.test5
+
+  Hyperion:
+    - switch.hyperion
+
+  default_view:
+    name: DEFAULT
+    icon: mdi:home
+    view: yes
+    entities:
+      - group.Sockets
+      - group.Hyperion
+      - group.Media

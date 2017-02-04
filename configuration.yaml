@@ -1,0 +1,68 @@
+homeassistant:
+  name: Home
+  latitude: 51.5092
+  longitude: -0.0955
+  elevation: 3
+  unit_system: metric
+  time_zone: Europe/London
+  customize: !include customize.yml
+
+zone: !include_dir_list zones/
+
+
+frontend:
+
+http:
+  api_password: !secret http_password
+  ip_ban_enabled: True
+  login_attempts_threshold: 5
+
+updater:
+
+ios:
+
+notify:
+  - platform: ios
+
+discovery:
+
+conversation:
+
+history:
+
+logbook:
+
+recorder:
+  purge_days: 7
+
+sun:
+
+switch: !include_dir_list switches/
+
+sensor: !include_dir_list sensors/
+media_player: !include mediaplayer.yml
+group: !include_dir_list groups/
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts: 192.168.2.1/24
+
+  - platform: owntracks
+    max_gps_accuracy: 200
+
+recorder:
+  purge_days: 7
+
+mqtt:
+  broker: !secret mqtt_broker
+  port: !secret mqtt_port
+  client_id: home-assistant-1
+  keepalive: 60
+  username: !secret mqtt_username
+  password: !secret mqtt_password
+
+emulated_hue:
+  expose_by_default: false
+
+tts:
+  platform: google

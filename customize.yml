@@ -1,0 +1,5 @@
+---
+  switch.light:
+    emulated_hue: true
+  media_player.sony:
+    emulated_hue: true
