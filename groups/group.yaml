@@ -1,32 +1,31 @@
----
-  Media:
-    - "media_player.panasonic"
-    - "media_player.sony"
+Media:
+  - "media_player.panasonic"
+  - "media_player.sony"
 
-  Sockets:
-    - switch.socket1
-    - switch.light
-    - switch.test1
-    - switch.test2
-    - switch.test3
-    - switch.test4
-    - switch.test5
+Sockets:
+  - switch.socket1
+  - switch.light
+  - switch.test1
+  - switch.test2
+  - switch.test3
+  - switch.test4
+  - switch.test5
 
-  Hyperion:
-    - switch.hyperion
+Hyperion:
+  - switch.hyperion
 
-  Rooms:
-    view: yes
-    name: Rooms
-    entities:
-      - group.livingroom
-      - group.bedroom
-    
-  default_view:
-    name: DEFAULT
-    icon: mdi:home
-    view: yes
-    entities:
-      - group.Sockets
-      - group.Hyperion
-      - group.Media
+Rooms:
+  view: yes
+  name: Rooms
+  entities:
+    - group.livingroom
+    - group.bedroom
+
+default_view:
+  name: DEFAULT
+  icon: mdi:home
+  view: yes
+  entities:
+    - group.Sockets
+    - group.Hyperion
+    - group.Media

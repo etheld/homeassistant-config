@@ -1,5 +1,5 @@
-  bedroom:
-    name: Livingroom
-    entities:
-      - sensor.livingroom_sensor_temperature
-      - sensor.livingroom_sensor_humidity
+bedroom:
+  name: Livingroom
+  entities:
+    - sensor.livingroom_sensor_temperature
+    - sensor.livingroom_sensor_humidity
