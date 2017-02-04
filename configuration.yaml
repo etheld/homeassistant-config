@@ -5,7 +5,7 @@ homeassistant:
   elevation: 3
   unit_system: metric
   time_zone: Europe/London
-  customize: !include customize.yml
+  customize: !include customize.yaml
 
 zone: !include_dir_list zones/
 
@@ -37,7 +37,7 @@ sun:
 switch: !include_dir_list switches/
 
 sensor: !include_dir_list sensors/
-media_player: !include mediaplayer.yml
+media_player: !include_dir_list mediaplayers/
 group: !include_dir_list groups/
 
 device_tracker:

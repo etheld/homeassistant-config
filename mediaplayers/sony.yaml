@@ -1,0 +1,5 @@
+platform: kodi
+host: !secret mediaplayer_sony_host
+name: sony
+username: !secret mediaplayer_sony_user
+password: !secret mediaplayer_sony_password
