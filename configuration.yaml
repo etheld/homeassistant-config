@@ -57,6 +57,7 @@ mqtt:
   keepalive: 60
   username: !secret mqtt_username
   password: !secret mqtt_password
+  protocol: "3.1"
 
 emulated_hue:
   expose_by_default: false

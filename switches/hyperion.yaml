@@ -1,0 +1,10 @@
+platform: mqtt
+name: hyperion
+state_topic: "home/hyperion"
+command_topic: "home/hyperion/set"
+payload_on: "ON"
+payload_off: "OFF"
+optimistic: false
+qos: 0
+retain: true
+value_template: '{{ value_json.value }}'

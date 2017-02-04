@@ -1,0 +1,6 @@
+platform: mqtt
+state_topic: 'home/bedroom/humidity'
+name: 'bedroom_sensor_humidity'
+qos: 0
+unit_of_measurement: '%'
+value_template: '{{ value_json.current }}'

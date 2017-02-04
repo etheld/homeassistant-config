@@ -1,0 +1,6 @@
+platform: mqtt
+state_topic: 'home/bedroom/temperature'
+name: 'bedroom_sensor_temperature'
+qos: 0
+unit_of_measurement: °C
+value_template: '{{ value_json.current }}'
