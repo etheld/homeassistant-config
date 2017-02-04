@@ -1,5 +1,6 @@
 bedroom:
   name: Bedroom
+  view: yes
   entities:
     - sensor.bedroom_sensor_temperature
     - sensor.bedroom_sensor_humidity

@@ -38,7 +38,7 @@ switch: !include_dir_list switches/
 
 sensor: !include_dir_list sensors/
 media_player: !include_dir_list mediaplayers/
-group: !include_dir_list groups/
+group: !include_dir_merge_named groups/
 
 device_tracker:
   - platform: nmap_tracker
@@ -57,7 +57,6 @@ mqtt:
   keepalive: 60
   username: !secret mqtt_username
   password: !secret mqtt_password
-  protocol: "3.1"
 
 emulated_hue:
   expose_by_default: false
