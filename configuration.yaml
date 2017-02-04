@@ -32,9 +32,6 @@ history:
 
 logbook:
 
-recorder:
-  purge_days: 7
-
 sun:
 
 switch: !include_dir_list switches/
