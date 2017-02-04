@@ -20,6 +20,8 @@
     icon: mdi:home
     view: yes
     entities:
+      - group.livingroom
+      - group.bedroom
       - group.Sockets
       - group.Hyperion
       - group.Media
