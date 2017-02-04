@@ -15,13 +15,18 @@
   Hyperion:
     - switch.hyperion
 
+  Rooms:
+    view: yes
+    name: Rooms
+    entities:
+      - group.livingroom
+      - group.bedroom
+    
   default_view:
     name: DEFAULT
     icon: mdi:home
     view: yes
     entities:
-      - group.livingroom
-      - group.bedroom
       - group.Sockets
       - group.Hyperion
       - group.Media
