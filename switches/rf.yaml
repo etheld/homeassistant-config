@@ -2,27 +2,27 @@ platform: rpi_rf
 gpio: 17
 switches:
   test1:
-    pulselength: 184
+    pulselength: 160
     code_on:  5526835
     code_off: 5526844
     signal_repetitions: 20
   test2:
-    pulselength: 184
+    pulselength: 160
     code_on:  5526979
     code_off: 5526988
     signal_repetitions: 20
   test3:
-    pulselength: 184
+    pulselength: 160
     code_on:  5527299
     code_off: 5527308
     signal_repetitions: 20
   test4:
-    pulselength: 184
+    pulselength: 160
     code_on:  5528935
     code_off: 5526944
     signal_repetitions: 20
   test5:
-    pulselength: 184
-    code_on:  5534979
-    code_off: 5534988
+    pulselength: 160
+    code_on:  5534999
+    code_off: 5535008
     signal_repetitions: 20

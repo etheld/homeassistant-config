@@ -1,5 +1,13 @@
 ---
   switch.light:
     emulated_hue: true
-  media_player.sony:
+  switch.test1:
+    emulated_hue: true
+  switch.test2:
+    emulated_hue: true
+  switch.test3:
+    emulated_hue: true
+  switch.test4:
+    emulated_hue: true
+  switch.test5:
     emulated_hue: true
