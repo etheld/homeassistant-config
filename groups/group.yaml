@@ -1,31 +1,37 @@
 Media:
-  - "media_player.panasonic"
-  - "media_player.sony"
-
-Sockets:
-  - switch.socket1
-  - switch.light
-  - switch.test1
-  - switch.test2
-  - switch.test3
-  - switch.test4
-  - switch.test5
-
-Hyperion:
-  - switch.hyperion
-
-Rooms:
-  view: yes
-  name: Rooms
+  name: Media
   entities:
-    - group.livingroom
-    - group.bedroom
+    - "media_player.lg"
+    - "media_player.sony"
+
+sockets:
+  name: Sockets
+  entities:
+    - switch.socket1
+    - switch.socket2
+    - switch.socket3
+    - switch.socket4
+    - switch.socket5
+    - switch.hyperion
+
+livingroom_sensors:
+  name: Livingroom sensors
+  entities:
+    - sensor.livingroom_humidity
+    - sensor.livingroom_temperature
+
+bedroom_sensors:
+  name: Bedroom sensors
+  entities:
+    - sensor.bedroom_humidity
+    - sensor.bedroom_temperature
 
 default_view:
   name: DEFAULT
   icon: mdi:home
   view: yes
   entities:
-    - group.Sockets
-    - group.Hyperion
-    - group.Media
+    - group.sockets
+    - sensor.yr
+    - group.bedroom_sensors
+    - group.livingroom_sensors

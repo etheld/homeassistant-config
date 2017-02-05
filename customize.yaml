@@ -1,13 +1,13 @@
 ---
-  switch.light:
+  switch.humidifer:
     emulated_hue: true
-  switch.test1:
+  switch.socket1:
     emulated_hue: true
-  switch.test2:
+  switch.socket2:
     emulated_hue: true
-  switch.test3:
+  switch.socket3:
     emulated_hue: true
-  switch.test4:
+  switch.socket4:
     emulated_hue: true
-  switch.test5:
+  switch.socket5:
     emulated_hue: true

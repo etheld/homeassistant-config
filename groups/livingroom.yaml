@@ -2,5 +2,6 @@ livingroom:
   name: Livingroom
   view: yes
   entities:
-    - sensor.livingroom_sensor_temperature
-    - sensor.livingroom_sensor_humidity
+    - sensor.livingroom_temperature
+    - sensor.livingroom_humidity
+    - media_player.sony

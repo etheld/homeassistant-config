@@ -1,0 +1,5 @@
+platform: kodi
+host: !secret mediaplayer_lg_host
+name: lg
+username: !secret mediaplayer_lg_user
+password: !secret mediaplayer_lg_password

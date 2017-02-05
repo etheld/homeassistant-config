@@ -1,4 +1,5 @@
 platform: yr
+name: yr
 monitored_conditions:
   - fog
   - precipitation

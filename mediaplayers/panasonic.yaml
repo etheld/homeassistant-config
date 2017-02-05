@@ -1,5 +1,0 @@
-platform: kodi
-host: !secret mediaplayer_pana_host
-name: panasonic
-username: !secret mediaplayer_pana_user
-password: !secret mediaplayer_pana_password
